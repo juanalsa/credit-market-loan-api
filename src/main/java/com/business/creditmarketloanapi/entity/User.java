@@ -8,6 +8,11 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Represents the information of the application users
+ *
+ * @author Julian Alvarado
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

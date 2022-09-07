@@ -7,11 +7,16 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * The Loan class represents the main entity of the model,
+ * which contains all the generated and calculated information of a loan
+ *
+ * @author Julian Alvarado
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -44,5 +49,5 @@ public class Loan {
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
-    private Timestamp createdAt;
+    private Date createdAt;
 }

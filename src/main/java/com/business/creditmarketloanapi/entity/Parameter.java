@@ -6,6 +6,11 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+/**
+ * Represents the different parameters of the business logic and the application
+ *
+ * @author Julian Alvarado
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

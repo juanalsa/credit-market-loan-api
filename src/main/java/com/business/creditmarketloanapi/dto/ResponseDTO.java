@@ -7,6 +7,11 @@ import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 
+/**
+ * Represents the general response structure of a request
+ *
+ * @author Julian Alvarado
+ */
 @NoArgsConstructor
 @AllArgsConstructor
 @Data

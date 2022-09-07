@@ -8,6 +8,11 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.Date;
 
+/**
+ * Represents the information of a payment made to a loan
+ *
+ * @author Julian Alvarado
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
