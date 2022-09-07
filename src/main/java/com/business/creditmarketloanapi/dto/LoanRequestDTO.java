@@ -7,6 +7,11 @@ import lombok.NoArgsConstructor;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
+/**
+ * Represents the data required to make a loan request
+ *
+ * @author Julian Alvarado
+ */
 @NoArgsConstructor
 @AllArgsConstructor
 @Data

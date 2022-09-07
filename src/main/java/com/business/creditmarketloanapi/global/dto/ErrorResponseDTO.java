@@ -7,6 +7,11 @@ import org.springframework.http.HttpStatus;
 
 import java.util.List;
 
+/**
+ * Represents the general structure for an error response
+ *
+ * @author Julian Alvarado
+ */
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
