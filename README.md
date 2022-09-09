@@ -171,7 +171,9 @@ To view and query the database you can browse to http://localhost:8080/h2-consol
 The easiest way to deploy the sample application to Heroku is to use the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli):
 
 ```shell
-heroku login
+heroku push origin main
 ```
+
+Project deployed on Heroku: [Credit Market Loan API](https://credit-market-loan-api.herokuapp.com)
 
 # Questions and Comments: juanalsa@gmail.com
