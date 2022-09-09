@@ -22,6 +22,7 @@ import java.util.Date;
  *
  * @author Julian Alvarado
  */
+@CrossOrigin
 @Validated
 @RestController
 @RequestMapping("/api")
