@@ -5,10 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
 
 /**
- * Represents the information of the application users
+ * Represents the different parameters of the business logic and the application
  *
  * @author Julian Alvarado
  */
@@ -16,18 +15,15 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name = "parameters")
+public class Parameter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String name;
+    private String description;
 
     @Column(nullable = false)
-    private String target;
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Loan> loans;
+    private String strValue;
 }
