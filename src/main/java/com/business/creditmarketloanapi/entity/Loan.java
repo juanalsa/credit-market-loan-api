@@ -9,8 +9,7 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 /**
  * The Loan class represents the main entity of the model,
@@ -46,7 +45,7 @@ public class Loan {
     private User user;
 
     @OneToMany(mappedBy = "loan", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Payment> payments = new HashSet<>();
+    private List<Payment> payments;
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
