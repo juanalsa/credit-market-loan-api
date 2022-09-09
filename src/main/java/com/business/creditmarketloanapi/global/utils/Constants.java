@@ -1,5 +1,7 @@
 package com.business.creditmarketloanapi.global.utils;
 
+import java.util.Set;
+
 /**
  * Represents constants used in the different API functionalities to refer to
  * model values or identifiers
@@ -31,4 +33,5 @@ public class Constants {
     public static final Long PREMIUM_TARGET_MAX_VOL_LOANS = 16L;
     public static final Long PREMIUM_TARGET_RATE = 17L;
     public static final Long PREMIUM_TARGET_MAX_AMOUNT_LOANS = 18L;
+    public static final Set<String> TARGET = Set.of("NEW", "FREQUENT", "PREMIUM");
 }

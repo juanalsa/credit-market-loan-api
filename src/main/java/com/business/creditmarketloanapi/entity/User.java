@@ -5,8 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 /**
  * Represents the information of the application users
@@ -30,5 +29,5 @@ public class User {
     private String target;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Loan> loans = new HashSet<>();
+    private List<Loan> loans;
 }
