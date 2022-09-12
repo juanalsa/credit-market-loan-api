@@ -100,7 +100,7 @@ public class PaymentServiceImpl implements PaymentService {
      * @return The amount of the debt
      */
     public Double calculateDebtByLoan(Loan loan) {
-        List<Payment> payments = paymentRepository.findByLoan(loan);
+        List<Payment> payments = loan.getPayments();
         Double totalAmountPaid = payments.stream()
                 .map(payment -> payment.getAmount())
                 .collect(Collectors.summingDouble(Double::doubleValue));
